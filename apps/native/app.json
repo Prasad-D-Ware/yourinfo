@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "scheme": "yourinfoapp",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "yourinfoapp",
+    "slug": "yourinfoapp",
+    "plugins": ["expo-font"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
