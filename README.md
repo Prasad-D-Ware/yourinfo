@@ -9,7 +9,7 @@ A privacy awareness mobile app that reveals what data applications can collect a
 
 ## 🎬 Demo
 
-<video src="apps/native/assets/yourinfo.mp4" controls width="300"></video>
+https://github.com/user-attachments/assets/46896329-50e0-4cc5-a3c8-b1378ea878ab
 
 ## 📱 Overview
 
