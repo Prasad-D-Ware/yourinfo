@@ -1,21 +1,31 @@
 import "@/global.css";
-import { Stack } from "expo-router";
+import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
 import { HeroUINativeProvider } from "heroui-native";
+import { StatusBar } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { KeyboardProvider } from "react-native-keyboard-controller";
 
 import { AppThemeProvider } from "@/contexts/app-theme-context";
 
-export const unstable_settings = {
-  initialRouteName: "(drawer)",
-};
-
 function StackLayout() {
   return (
-    <Stack screenOptions={{}}>
-      <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
-      <Stack.Screen name="modal" options={{ title: "Modal", presentation: "modal" }} />
-    </Stack>
+    <>
+      <StatusBar barStyle="light-content" />
+      <NativeTabs>
+          <NativeTabs.Trigger name="index" >
+              <Label>Overview</Label>
+              <Icon sf={"house.fill"} selectedColor={"#22d3ee"}/>
+          </NativeTabs.Trigger>
+          <NativeTabs.Trigger name="sensors">
+              <Label>Sensors</Label>
+              <Icon sf={"sensor"} selectedColor={"#22d3ee"}/>
+          </NativeTabs.Trigger>
+          <NativeTabs.Trigger name="permissions">
+              <Label>Permissions</Label>
+              <Icon sf={"lock.shield"} selectedColor={"#22d3ee"}/>
+          </NativeTabs.Trigger>
+      </NativeTabs>
+    </>
   );
 }
 
